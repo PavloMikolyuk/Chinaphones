@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #c22b1d;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Roboto Serif", serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    background-color: #f0c424;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #d4a81e;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #c22b1d;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.brand-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+}
+
+.brand-logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.brand-card h3 {
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    color: #c22b1d;
+    margin-bottom: 10px;
+}
+
+.brand-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f0c424;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d4a81e;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #f0c424;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
