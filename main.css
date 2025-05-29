@@ -103,12 +103,6 @@ h2 {
     transform: translateY(-5px);
 }
 
-.brand-logo {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
 .brand-card h3 {
     font-family: "Roboto Serif", serif;
     font-weight: 600;
