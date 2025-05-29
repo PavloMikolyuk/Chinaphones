@@ -1,0 +1,98 @@
+.tinos {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.tektur {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 36px;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    top: 15px;
+}
+header {
+    background-color: #FF6700;
+    padding-bottom: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #ff6f00;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+.timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.year {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #ff6f00;
+}
+.year h2 {
+    color: #ff6f00;
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+.year h3 {
+    color: #333;
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+.year ul {
+    list-style: none;
+    padding: 0;
+}
+.year ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.year ul li strong {
+    color: #555;
+}
