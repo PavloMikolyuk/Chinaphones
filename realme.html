@@ -30,6 +30,7 @@
             <div class="timeline-item">
                 <h3>2018</h3>
                 <p>Realme засновано 4 травня Скаєм Лі, колишнім віце-президентом OPPO, як окремий бренд. Перший смартфон Realme 1 запущено ексклюзивно в Індії через Amazon India (6-дюймовий FullHD екран, MediaTek Helio P60, камера 13 Мп, акумулятор 3410 мАг). За 30 днів продано 400 000 одиниць, за 7 місяців — 4 млн. Бренд посів 4-е місце в Індії з часткою 8%. Засновано філософію "Dare to Leap", орієнтовану на молодь.</p>
+                <img src="realme1.jpg">
             </div>
             <div class="timeline-item">
                 <h3>2019</h3>
@@ -54,6 +55,7 @@
             <div class="timeline-item">
                 <h3>2024</h3>
                 <p>Активна присутність в Україні, де Realme конкурує з Apple, Samsung, Xiaomi. Випущено моделі з підтримкою 5G, камерами 50 Мп+ і дисплеями 120 Гц (Realme 12 Pro, GT Neo 5). Ціни від 3349 грн підкреслили доступність. Запущено нові AIoT-продукти (смарт-годинники Realme Watch 3, навушники Buds Air 4). Фокус на екологічні матеріали та енергоефективність.</p>
+                <img src="Gtneo5.png">
             </div>
             <div class="timeline-item">
                 <h3>2025</h3>
@@ -64,39 +66,6 @@
     <footer>
         <p>© 2025</p>
     </footer>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-const themeToggle = document.getElementById('theme-toggle');
-const html = document.documentElement;
-if (localStorage.getItem('theme') === 'dark') {
-    html.classList.remove('light');
-    html.classList.add('dark');
-    themeToggle.textContent = 'Світла тема';
-} else {
-    html.classList.remove('dark');
-    html.classList.add('light');
-    themeToggle.textContent = 'Темна тема';
-}
-themeToggle.addEventListener('click', () => {
-    if (html.classList.contains('light')) {
-        html.classList.remove('light');
-        html.classList.add('dark');
-        themeToggle.textContent = 'Світла тема';
-        localStorage.setItem('theme', 'dark');
-    } else {
-        html.classList.remove('dark');
-        html.classList.add('light');
-        themeToggle.textContent = 'Темна тема';
-        localStorage.setItem('theme', 'light');
-    }
-});
-    </script>
+    <script src="relme.js"></script>
 </body>
 </html>
