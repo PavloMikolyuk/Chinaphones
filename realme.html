@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,14 @@
     <title>Еволюція Realme</title>
 </head>
 <body>
-    <script>realme.js</script>
     <header>
         <nav>
             <h1 class="logo">Realme Еволюція</h1>
             <nav class="nav-links">
-                <a href="#home">Головна</a>
-                <a href="#history">Історія</a>
-                <a href="#contact">Контакти</a>
+                <a href="index.html">Головна</a>
+                <a href="xiaomi.html">Xiaomi</a>
+                <a href="oppo.html">OPPO</a>
+                <button id="theme-toggle">Темна тема</button>
             </nav>
         </nav>
     </header>
@@ -62,7 +62,45 @@
             </div>
         </div>
     </section>
-    <footer id="contact">
+    <footer>
         <p>© 2025 Realme | <a href="mailto:support@realme.ua">support@realme.ua</a></p>
     </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            html.classList.remove('light');
+            html.classList.add('dark');
+            themeToggle.textContent = 'Світла тема';
+        } else {
+            html.classList.remove('dark');
+            html.classList.add('light');
+            themeToggle.textContent = 'Темна тема';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('light')) {
+                html.classList.remove('light');
+                html.classList.add('dark');
+                themeToggle.textContent = 'Світла тема';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark');
+                html.classList.add('light');
+                themeToggle.textContent = 'Темна тема';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body>
 </html>
