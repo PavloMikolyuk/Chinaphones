@@ -1,3 +1,29 @@
+:root {
+    --background: #f5f5f5;
+    --header-bg: #ffcc00;
+    --hero-bg: #ffffff;
+    --card-bg: #ffffff;
+    --footer-bg: #333333;
+    --text-color: #333333;
+    --heading-color: #ff9900;
+    --link-color: #ffffff;
+    --link-hover-color: #e0e0e0;
+    --button-bg: #ffcc00;
+    --button-text: #333333;
+}
+html.dark {
+    --background: #1a1a1a;
+    --header-bg: #333333;
+    --hero-bg: #2c2c2c;
+    --card-bg: #2c2c2c;
+    --footer-bg: #111111;
+    --text-color: #e0e0e0;
+    --heading-color: #ffcc00;
+    --link-color: #e0e0e0;
+    --link-hover-color: #ffcc00;
+    --button-bg: #555555;
+    --button-text: #e0e0e0;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,91 +31,108 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 body {
-    line-height: 1.5;
-    color: #333;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--background);
 }
 header {
-    background: #ffcc00;
-    color: white;
-    padding: 0.8rem 0;
+    background: var(--header-bg);
+    color: var(--link-color);
+    padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
 }
 nav {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 h1.logo {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 nav.nav-links {
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    align-items: center;
 }
 nav.nav-links a {
-    color: white;
+    color: var(--link-color);
     text-decoration: none;
     font-size: 0.95rem;
 }
 nav.nav-links a:hover {
+    color: var(--link-hover-color);
     text-decoration: underline;
 }
+nav.nav-links button#theme-toggle {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+nav.nav-links button#theme-toggle:hover {
+    opacity: 0.9;
+}
 .hero {
-    padding: 80px 15px;
+    background: var(--hero-bg);
+    padding: 80px 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .hero h1 {
     font-size: 2rem;
+    color: var(--heading-color);
     margin-bottom: 0.5rem;
 }
 .hero p {
-    font-size: 1rem;
-    max-width: 500px;
+    font-size: 0.95rem;
+    max-width: 600px;
     margin: 0 auto;
 }
 .section {
-    max-width: 1000px;
-    margin: 1.5rem auto;
-    padding: 0 15px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
 }
 .history h2 {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    color: var(--heading-color);
     text-align: center;
+    margin-bottom: 1rem;
 }
 .timeline {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 .timeline-item {
-    border: 1px solid #ddd;
+    background: var(--card-bg);
     padding: 15px;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 .timeline-item h3 {
     font-size: 1.3rem;
-    color: #ff9900;
-    margin-bottom: 0.4rem;
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
 }
 .timeline-item p {
     font-size: 0.95rem;
 }
 footer {
-    background: #333;
-    color: white;
+    background: var(--footer-bg);
+    color: var(--link-color);
     text-align: center;
     padding: 1rem 0;
 }
 footer a {
-    color: #ffcc00;
+    color: var(--link-hover-color);
     text-decoration: none;
 }
