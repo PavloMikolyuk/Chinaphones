@@ -63,6 +63,18 @@ nav {
     margin-top: 15px;
 }
 
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #f0c424;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #d4a81e;
+}
+
 #theme-toggle {
     background-color: #fff;
     color: #ff6f00;
